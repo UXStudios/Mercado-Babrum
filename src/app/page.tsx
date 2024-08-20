@@ -1,46 +1,55 @@
 import Card, { ProductsType } from "@/components/Card";
 import Slider from "@/components/Slider";
+import Slider2 from "@/components/Slider2";
 
 export default function Home() {
   const products: ProductsType[] = [
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
     {
       img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Shoes!",
+      price: 987.65,
       description: "If a dog chews shoes whose shoes does he choose?",
     },
   ];
@@ -50,7 +59,7 @@ export default function Home() {
       <nav className="fixed inset-x-0 z-10 bg-base-100 shadow-md">
         <div className="navbar mx-auto max-w-[1024px] px-4 md:px-8">
           <div className="flex-1">
-            <a className="btn btn-ghost text-xl">Mercado Babrum</a>
+            <a className="btn btn-ghost text-xl">Mercado Bibrum</a>
           </div>
           <div className="flex-none">
             <div className="dropdown dropdown-end">
@@ -127,7 +136,9 @@ export default function Home() {
         </div>
       </nav>
 
-      <Slider />
+      <section className="pt-28 pb-12">
+        <Slider />
+      </section>
 
       <div className="flex flex-wrap gap-8 max-w-[1024px] mx-auto px-4 md:px-8">
         {products.map((product, index) => (
@@ -135,6 +146,7 @@ export default function Home() {
             key={index}
             img={product.img}
             title={product.title}
+            price={product.price}
             description={product.description}
           />
         ))}
